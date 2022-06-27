@@ -10,7 +10,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-const datafile = "b005101.txt"
+const datafile = "testdata/b005101.txt"
 
 func TestOddAbundant(t *testing.T) {
 	f, err := os.Open(datafile)

@@ -1,6 +1,9 @@
 # github.com/Knetic/govaluate v3.0.0+incompatible
 ## explicit
 github.com/Knetic/govaluate
+# github.com/divan/num2words v0.0.0-20170904212200-57dba452f942
+## explicit
+github.com/divan/num2words
 # github.com/google/go-cmp v0.5.8
 ## explicit; go 1.13
 github.com/google/go-cmp/cmp
@@ -11,3 +14,5 @@ github.com/google/go-cmp/cmp/internal/value
 # github.com/jbarham/primegen v0.0.0-20200302115600-8ce4838491a0
 ## explicit; go 1.14
 github.com/jbarham/primegen
+# github.com/smartystreets/goconvey v1.7.2
+## explicit; go 1.16
