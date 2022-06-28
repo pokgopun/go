@@ -39,35 +39,37 @@ func TestOddAbundant(t *testing.T) {
 		t.Error(diff)
 	}
 }
-func TestIsAbundant(t *testing.T) {
-	f, err := os.Open(datafile)
-	if err != nil {
-		t.Error(err)
-	}
-	defer f.Close()
-	r := bufio.NewReader(f)
-	var (
-		i, n, a  uint
-		answer   []bool
-		ans, res bool
-	)
-	for {
-		_, err = fmt.Fscanln(r, &n, &a)
-		if err == io.EOF {
-			break
-		}
+func BenchmarkIsAbundant(b *testing.B) {
+	for k := 0; k < b.N; k++ {
+		f, err := os.Open(datafile)
 		if err != nil {
-			panic(err)
+			b.Error(err)
 		}
-		answer = make([]bool, a-i+1)
-		answer[a-i] = true
-		for j := i; j <= a; j++ {
-			res, ans = IsAbundant(j), answer[j-i]
-			//fmt.Println(j, "=>", res)
-			if res != ans {
-				t.Errorf("%d: expected %t, got %t", j, ans, res)
+		r := bufio.NewReader(f)
+		var (
+			i, n, a  uint
+			answer   []bool
+			ans, res bool
+		)
+		for {
+			_, err = fmt.Fscanln(r, &n, &a)
+			if err == io.EOF {
+				break
 			}
+			if err != nil {
+				panic(err)
+			}
+			answer = make([]bool, a-i+1)
+			answer[a-i] = true
+			for j := i; j <= a; j++ {
+				res, ans = IsAbundant(j), answer[j-i]
+				//fmt.Println(j, "=>", res)
+				if res != ans {
+					b.Errorf("%d: expected %t, got %t", j, ans, res)
+				}
+			}
+			i = a + 1
 		}
-		i = a + 1
+		f.Close()
 	}
 }
