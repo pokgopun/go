@@ -40,15 +40,23 @@ func isMatrix(m [][]int) bool {
 	return true
 }
 func MatrixString(str string, s [][]int) string {
-	var max int
+	var min, max int
 	for i := 0; i < len(s); i++ {
 		for j := 0; j < len(s[i]); j++ {
 			if max < s[i][j] {
 				max = s[i][j]
 			}
+			if min > s[i][j] {
+				min = s[i][j]
+			}
 		}
 	}
-	pw := len(strconv.Itoa(max))
+	max = len(strconv.Itoa(max))
+	pw := max
+	min = len(strconv.Itoa(min))
+	if min > max {
+		pw = min
+	}
 	var b strings.Builder
 	b.WriteString(fmt.Sprintf("%[1]*s = %[3]*v\n", len(str), str, pw, s[0]))
 	for _, v := range s[1:] {
