@@ -34,9 +34,18 @@ func main() {
 	fmt.Printf("=> DigitsumAfterSquare = Compose(Digitsum, Square) -> DigitsumAfterSquare(%v) = %v\n", s, DigitsumAfterSquare(s))
 	fmt.Println("\n")
 }
-func Compose(f1, f2 func([]uint) []uint) func([]uint) []uint {
-	return func(s []uint) []uint {
-		return f1(f2(s))
+func Compose(f ...func([]uint) []uint) func([]uint) []uint {
+	switch len(f) {
+	case 0:
+		return func(s []uint) []uint {
+			return s
+		}
+	case 1:
+		return f[0]
+	default:
+		return func(s []uint) []uint {
+			return f[0](Compose(f[1:]...)(s))
+		}
 	}
 }
 func Square(s []uint) (r []uint) {
