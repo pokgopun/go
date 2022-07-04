@@ -1,3 +1,36 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-161/
+
+Task 2: Pangrams
+
+Submitted by: [55]Ryan J Thompson
+     __________________________________________________________________
+
+   A pangram is a sentence or phrase that uses every letter in the English
+   alphabet at least once. For example, perhaps the most well known
+   pangram is:
+the quick brown fox jumps over the lazy dog
+
+   Using the provided [56]dictionary, so that you don’t need to include
+   individual copy, generate at least one pangram.
+
+   Your pangram does not have to be a syntactically valid English sentence
+   (doing so would require far more work, and a dictionary of nouns,
+   verbs, adjectives, adverbs, and conjunctions). Also note that repeated
+   letters, and even repeated words, are permitted.
+
+BONUS: Constrain or optimize for something interesting (completely up to
+you), such as:
+
+Shortest possible pangram (difficult)
+Pangram which contains only abecedarian words (see challenge 1)
+Pangram such that each word "solves" exactly one new letter. For example, such a
+ pangram might begin with (newly solved letters in bold):
+    a ah hi hid die ice tea ...
+    What is the longest possible pangram generated with this method? (All soluti
+ons will contain 26 words, so focus on the letter count.)
+Pangrams that have the weirdest (PG-13) Google image search results
+Anything interesting goes!
+*/
 package main
 
 import (

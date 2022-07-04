@@ -1,4 +1,17 @@
-// Write a script to generate the check digit of given ISBN-13 code. Please refer wikipedia for more information.
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-162/
+Task 1: ISBN-13
+
+Submitted by: [50]Mohammad S Anwar
+     __________________________________________________________________
+
+   Write a script to generate the check digit of given ISBN-13 code.
+   Please refer [51]wikipedia for more information.
+
+Example
+
+ISBN-13 check digit for '978-0-306-40615-7' is 7.
+
+*/
 package main
 
 import (

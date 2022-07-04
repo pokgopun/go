@@ -1,0 +1,307 @@
+https://theweeklychallenge.org/blog/perl-weekly-challenge-145/
+   (BUTTON) Top
+
+   [1]logo (BUTTON)
+     * [2]Home
+     * [3]About
+     * [4]Chart
+     * [5]Champions
+     * [6]Team
+     * [7]Challenges
+     * [8]Perl/Review
+     * [9]Raku/Review
+     * [10]Recaps
+     * [11]Blogs
+     * [12]FAQ
+     * [13]Contact
+
+The Weekly Challenge - 145
+
+   Monday, Dec 27, 2021| Tags: Perl, Raku
+
+TABLE OF CONTENTS
+     __________________________________________________________________
+
+01. [14]HEADLINES
+
+02. [15]SPONSOR
+
+03. [16]RECAP
+
+04. [17]PERL REVIEW
+
+05. [18]RAKU REVIEW
+
+06. [19]CHART
+
+07. [20]NEW MEMBERS
+
+08. [21]GUESTS
+
+09. [22]TASK #1: Dot Product
+
+10. [23]TASK #2: Palindromic Tree
+
+HEADLINES
+     __________________________________________________________________
+
+   Merry Christmas to all the members of Team PWC. I wish you all the
+   happiness in the world.
+
+   Last week for me was for the family. I spent quality time with kids. I
+   have another week off left. I am looking forward to it. I hope and wish
+   you also had great time with your loved ones. I would like to thank the
+   dedicated and passionate members of Team PWC who still manage to
+   contribute in the holiday season. I know it is not easy but you still
+   did it. I suggest if you struggle for time for the weekly challenge
+   then simply attempt only task one as it generally takes no time. I
+   would like mention one name specially, Colin Crain, for being the
+   one-man army when it comes to Perl Reviews. You have done a brilliant
+   job. It is no longer a secret how much your work is appreciated by the
+   Team PWC members.
+
+   With the regard to the 1000 days T-shirt campaign, I haven’t had any
+   response from the remaining champions. I can understand they are busy
+   with the family. I am hoping in the new year they will find time to
+   respond to my email.
+
+   This is the last week of the year 2021, let me take this opportunity to
+   say Good Bye on behalf of Team PWC.
+
+Revisit The Weekly Challenge - 075 (Task #1: Coins Sum)
+     __________________________________________________________________
+
+   IFRAME: [24]https://www.youtube.com/embed/Q8UPvDMYqJA
+
+Advent Calendar 2021
+     __________________________________________________________________
+
+   Small improvement to the Advent Calendar, it now shows the topic and
+   author on mouse over day image. I hope you like it.
+
+Day 21: [25]Product SubArray by E. Choroba.
+
+Day 22: [26]Word Search by Javier Luque.
+
+Day 23: [27]Transpose CSV File by Ryan Thompson.
+
+Day 24: [28]Swap Odd/Even bits by Mohammad S Anwar.
+
+Blogs with Creative Title
+     __________________________________________________________________
+
+1. [29]A Stocking Full of Numbers: Semiprimes and the Ulam Sequence by Adam
+Russell.
+
+2. [30]Primarily Ulam with Raku (and perl) by Arne Sommer.
+
+3. [31]Almost Prime and In Sequence: The Weekly Challenge #144 by Dave Jacoby
+
+4. [32]Perl Weekly Challenge 144: headache! by Luca Ferrari.
+
+5. [33]Illuminating the Ulam by Peter Campbell Smith.
+
+6. [34]The Weekly Challenge 144: Semiprime Ulam by Roger Bell_West.
+
+   Let us share some interesting stats from the [35]GitHub repository.
+
+1. Commits: 22,225 (+133)
+
+2. Pull Requests: 5,416 (+31)
+
+3. Contributors: 183
+
+4. Fork: 234
+
+5. Stars: 118
+
+   Last but not least, I would like to thank each and every member for
+   their support and encouragement.
+
+SPONSOR
+     __________________________________________________________________
+
+   Our solo sponsor Pete Sergeant has been a great support to keep us
+   motivated. We are lucky that he agreed to continue the journey with us
+   in the year 2021. I would like to personally thank Pete and his entire
+   team for their generosity. It would be great if we could add few more
+   to sponsor the prize money so that we could go back and declare weekly
+   champions as we have done in the past. I hope and wish this will become
+   possible in 2021. The amount doesn’t have to be huge. However, it would
+   be nice to show off bunch of supporters. If an organisation comes
+   forward and supports us then that would be the ultimate achievement.
+
+RECAP
+     __________________________________________________________________
+
+   Quick recap of [36]“The Weekly Challenge - 144” by Mohammad S Anwar.
+
+PERL REVIEW
+     __________________________________________________________________
+
+   Please check out Perl solutions review of the [37]“The Weekly Challenge
+   - 140” by Colin Crain.
+
+   If you missed any past reviews then please check out the
+   [38]collection.
+
+RAKU REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [39]collection.
+
+CHART
+     __________________________________________________________________
+
+   Please take a look at the [40]charts showing interesting data.
+
+   I would like to THANK every member of the team for their valuable
+   suggestions. Please do share your experience with us.
+
+NEW MEMBERS
+     __________________________________________________________________
+
+   Please find out [41]How to contribute?, if you have any doubts.
+
+   Please try the excellent tool [42]EZPWC created by respected member
+   Saif Ahmed of Team PWC.
+
+GUESTS
+     __________________________________________________________________
+
+   Please checkout the guest contributions for the [43]Week #144.
+
+   Please find [44]past solutions by respected guests. Please share your
+   creative solutions in other languages.
+
+TASK #1 › Dot Product
+
+Submitted by: [45]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given 2 arrays of same size, @a and @b.
+
+   Write a script to implement Dot Product.
+
+Example:
+
+@a = (1, 2, 3);
+@b = (4, 5, 6);
+
+$dot_product = (1 * 4) + (2 * 5) + (3 * 6) => 4 + 10 + 18 => 32
+
+TASK #2 › Palindromic Tree
+
+Submitted by: [46]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given a string $s.
+
+   Write a script to create a Palindromic Tree for the given string.
+
+   I found this [47]blog exaplaining Palindromic Tree in detail.
+
+Example 1:
+
+Input: $s = 'redivider'
+Output: r redivider e edivide d divid i ivi v
+
+Example 2:
+
+Input: $s = 'deific'
+Output: d e i ifi f c
+
+Example 3:
+
+Input: $s = 'rotors'
+Output: r rotor o oto t s
+
+Example 4:
+
+Input: $s = 'challenge'
+Output: c h a l ll e n g
+
+Example 5:
+
+Input: $s = 'champion'
+Output: c h a m p i o n
+
+Example 6:
+
+Input: $s = 'christmas'
+Output: c h r i s t m a
+     __________________________________________________________________
+
+   Last date to submit the solution 23:59 (UK Time) Sunday 2nd January
+   2022.
+     __________________________________________________________________
+
+SO WHAT DO YOU THINK ?
+
+   If you have any suggestions or ideas then please do share with us.
+   [48]Contact with me
+
+   Copyright: 2019 - 2022 The Weekly Challenge. Theme Design and Developed
+   by [49]Themefisher.
+     *
+     *
+     *
+
+References
+
+   Visible links:
+   1. https://theweeklychallenge.org/
+   2. https://theweeklychallenge.org/
+   3. https://theweeklychallenge.org/about
+   4. https://theweeklychallenge.org/chart
+   5. https://theweeklychallenge.org/champions
+   6. https://theweeklychallenge.org/team
+   7. https://theweeklychallenge.org/challenges
+   8. https://theweeklychallenge.org/p5-reviews
+   9. https://theweeklychallenge.org/p6-reviews
+  10. https://theweeklychallenge.org/recaps
+  11. https://theweeklychallenge.org/blogs
+  12. https://theweeklychallenge.org/faq
+  13. https://theweeklychallenge.org/contact
+  14. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#HEADLINES
+  15. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#SPONSOR
+  16. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#RECAP
+  17. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#PERLREVIEW
+  18. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#RAKUREVIEW
+  19. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#CHART
+  20. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#NEWMEMBERS
+  21. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#GUESTS
+  22. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#TASK1
+  23. https://theweeklychallenge.org/blog/perl-weekly-challenge-145/#TASK2
+  24. https://www.youtube.com/embed/Q8UPvDMYqJA
+  25. https://theweeklychallenge.org/blog/advent-calendar-2021-12-21
+  26. https://theweeklychallenge.org/blog/advent-calendar-2021-12-22
+  27. https://theweeklychallenge.org/blog/advent-calendar-2021-12-23
+  28. https://theweeklychallenge.org/blog/advent-calendar-2021-12-24
+  29. http://www.rabbitfarm.com/cgi-bin/blosxom/2021/12/26/perl
+  30. https://raku-musings.com/primarily-ulam.html
+  31. https://jacoby.github.io/2021/12/20/almost-prime-and-in-sequence-the-weekly-challenge-144.html
+  32. https://fluca1978.github.io/2021/12/20/PerlWeeklyChallenge144.html
+  33. https://pjcs-pwc.blogspot.com/2021/12/illuminating-ulam.html
+  34. https://blog.firedrake.org/archive/2021/12/The_Weekly_Challenge_144__Semiprime_Ulam.html
+  35. https://github.com/manwar/perlweeklychallenge-club
+  36. https://theweeklychallenge.org/blog/recap-challenge-144
+  37. https://theweeklychallenge.org/blog/review-challenge-140
+  38. https://theweeklychallenge.org/p5-reviews
+  39. https://theweeklychallenge.org/p6-reviews
+  40. https://theweeklychallenge.org/chart
+  41. https://theweeklychallenge.org/blog/how-to-contribute
+  42. https://github.com/saiftynet/EZPWC
+  43. https://theweeklychallenge.org/blog/guest-contribution/#144
+  44. https://theweeklychallenge.org/blog/guest-contribution
+  45. http://www.manwar.org/
+  46. http://www.manwar.org/
+  47. https://medium.com/@alessiopiergiacomi/eertree-or-palindromic-tree-82453e75025b
+  48. https://theweeklychallenge.org/contact
+  49. http://www.Themefisher.com/
+
+   Hidden links:
+  51. https://twitter.com/PerlWChallenge
+  52. https://theweeklychallenge.org/rss.xml
+  53. https://www.nomtimes.co.uk/site/shop.do?cref=PerlBooks

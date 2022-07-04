@@ -1,11 +1,14 @@
 /* https://theweeklychallenge.org/blog/perl-weekly-challenge-171/
 Task 2: First-class Function
-Submitted by: Mohammad S Anwar
-Create sub compose($f, $g) which takes in two parameters $f and $g as subroutine refs and returns subroutine ref i.e. compose($f, $g)->($x) = $f->($g->($x))
 
+Submitted by: [52]Mohammad S Anwar
+     __________________________________________________________________
 
-e.g.
+   Create sub compose($f, $g) which takes in two parameters $f and $g as
+   subroutine refs and returns subroutine ref i.e. compose($f, $g)->($x) =
+   $f->($g->($x))
 
+   e.g.
 $f = (one or more parameters function)
 $g = (one or more parameters function)
 

@@ -1,0 +1,269 @@
+https://theweeklychallenge.org/blog/perl-weekly-challenge-168/
+   (BUTTON) Top
+
+   [1]logo (BUTTON)
+     * [2]Home
+     * [3]About
+     * [4]Chart
+     * [5]Champions
+     * [6]Team
+     * [7]Challenges
+     * [8]Perl/Review
+     * [9]Raku/Review
+     * [10]Recaps
+     * [11]Blogs
+     * [12]FAQ
+     * [13]Contact
+
+The Weekly Challenge - 168
+
+   Monday, Jun 6, 2022| Tags: Perl, Raku
+
+TABLE OF CONTENTS
+     __________________________________________________________________
+
+01. [14]HEADLINES
+
+02. [15]SPONSOR
+
+03. [16]RECAP
+
+04. [17]PERL REVIEW
+
+05. [18]RAKU REVIEW
+
+06. [19]CHART
+
+07. [20]NEW MEMBERS
+
+08. [21]GUESTS
+
+09. [22]TASK #1: Perrin Prime
+
+10. [23]TASK #2: Home Prime
+
+HEADLINES
+     __________________________________________________________________
+
+   Welcome to the Week #168.
+
+   Let us all welcome guest Michael DiCicco from Little Rock, AR sharing
+   his first contributions in [24]Java and [25]Python.
+
+   What a coincidence, we have two members sharing the same surname
+   DiCicco and he is none other than our very own champion [26]Robert
+   DiCicco.
+
+   Today is the first Monday of the month and time to declare our next
+   champion. With great pleasure, I announce Robert Ransbottom as the next
+   champion. He joined the Team PWC in the Week #150. As of today, he has
+   contributed 31 solutions in Raku.
+
+   The task Gamma Function of last week turned out to be untouchable.
+   Could it be, it is more of mathy than the most. However, our champion,
+   [27]Ryan Thompson took all the trouble to give us the lighter side in
+   his [28]blog post.
+
+   Finally I got the time to participate in the weekly challenge. It was
+   partly because I wanted to try the latest release Perl v5.36. After a
+   short gap of two weeks, I share my solution to the task [29]Circular
+   Prime in Perl v5.36. I am looking forward to Colin Crain comment on the
+   same, if at all, if it’s worth his time.
+
+   Good luck for the next challenge.
+
+Blogs with Creative Title
+     __________________________________________________________________
+
+1. [30]Primarily Functional by Arne Sommer.
+
+2. [31]Perl vs The World Crime League by Dave Jacoby.
+
+3. [32]too much math! by Luca Ferrari.
+
+4. [33]Prime, ePrim, mePri, imePr, rimeP … and Gamma by Peter Campbell Smith.
+
+5. [34]Circling the Gamma by Roger Bell_West.
+
+[35]GitHub Repository Stats
+     __________________________________________________________________
+
+1. Commits: 25,653 (+121)
+
+2. Pull Requests: 6,201 (+30)
+
+3. Contributors: 196 (+1)
+
+4. Fork: 249 (+1)
+
+5. Stars: 135 (+3)
+
+SPONSOR
+     __________________________________________________________________
+
+   Our solo sponsor Pete Sergeant has been a great support to keep us
+   motivated. We are lucky that he agreed to continue the journey with us
+   in the year 2022. I would like to personally thank Pete and his entire
+   team for their generosity. It would be great if we could add few more
+   to sponsor the prize money so that we could go back and declare weekly
+   champions as we have done in the past. I hope and wish this will become
+   possible in 2022. The amount doesn’t have to be huge. However, it would
+   be nice to show off bunch of supporters. If an organisation comes
+   forward and supports us then that would be the ultimate achievement.
+
+RECAP
+     __________________________________________________________________
+
+   Quick recap of [36]The Weekly Challenge - 167 by Mohammad S Anwar.
+
+PERL REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [37]collection.
+
+RAKU REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [38]collection.
+
+CHART
+     __________________________________________________________________
+
+   Please take a look at the [39]charts showing interesting data.
+
+   I would like to THANK every member of the team for their valuable
+   suggestions. Please do share your experience with us.
+
+NEW MEMBERS
+     __________________________________________________________________
+
+   [40]Michael DiCicco from Little Rock, AR, joined the Team PWC.
+
+   Please find out [41]How to contribute?, if you have any doubts.
+
+   Please try the excellent tool [42]EZPWC created by respected member
+   Saif Ahmed of Team PWC.
+
+GUESTS
+     __________________________________________________________________
+
+   Please checkout the guest contributions for the [43]Week #167.
+
+   Please find [44]past solutions by respected guests. Please share your
+   creative solutions in other languages.
+
+Task 1: Perrin Prime
+
+Submitted by: [45]Roger Bell_West
+     __________________________________________________________________
+
+   The Perrin sequence is defined to start with [3, 0, 2]; after that,
+   term N is the sum of terms N-2 and N-3. (So it continues 3, 2, 5, 5, 7,
+   ….)
+
+     A Perrin prime is a number in the Perrin sequence which is also a
+     prime number.
+
+   Calculate the first 13 Perrin Primes.
+
+   f(13) = [2, 3, 5, 7, 17, 29, 277, 367, 853, 14197, 43721, 1442968193,
+   792606555396977]
+
+Task 2: Home Prime
+
+Submitted by: [46]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given an integer greater than 1.
+
+   Write a script to find the home prime of the given number.
+
+   In number theory, the home prime HP(n) of an integer n greater than 1
+   is the prime number obtained by repeatedly factoring the increasing
+   concatenation of prime factors including repetitions.
+
+   Further information can be found on [47]Wikipedia and [48]OEIS.
+
+Example
+
+   As given in the Wikipedia page,
+HP(10) = 773, as 10 factors as 2×5 yielding HP10(1) = 25, 25 factors as 5×5 yiel
+ding HP10(2) = HP25(1) = 55, 55 = 5×11 implies HP10(3) = HP25(2) = HP55(1) = 511
+, and 511 = 7×73 gives HP10(4) = HP25(3) = HP55(2) = HP511(1) = 773, a prime num
+ber.
+     __________________________________________________________________
+
+   Last date to submit the solution 23:59 (UK Time) Sunday 12th June 2022.
+     __________________________________________________________________
+
+SO WHAT DO YOU THINK ?
+
+   If you have any suggestions or ideas then please do share with us.
+   [49]Contact with me
+
+   Copyright: 2019 - 2022 The Weekly Challenge. Theme Design and Developed
+   by [50]Themefisher.
+     *
+     *
+     *
+
+References
+
+   Visible links:
+   1. https://theweeklychallenge.org/
+   2. https://theweeklychallenge.org/
+   3. https://theweeklychallenge.org/about
+   4. https://theweeklychallenge.org/chart
+   5. https://theweeklychallenge.org/champions
+   6. https://theweeklychallenge.org/team
+   7. https://theweeklychallenge.org/challenges
+   8. https://theweeklychallenge.org/p5-reviews
+   9. https://theweeklychallenge.org/p6-reviews
+  10. https://theweeklychallenge.org/recaps
+  11. https://theweeklychallenge.org/blogs
+  12. https://theweeklychallenge.org/faq
+  13. https://theweeklychallenge.org/contact
+  14. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#HEADLINES
+  15. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#SPONSOR
+  16. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#RECAP
+  17. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#PERLREVIEW
+  18. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#RAKUREVIEW
+  19. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#CHART
+  20. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#NEWMEMBERS
+  21. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#GUESTS
+  22. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#TASK1
+  23. https://theweeklychallenge.org/blog/perl-weekly-challenge-168/#TASK2
+  24. https://github.com/manwar/perlweeklychallenge-club/blob/master/challenge-167/michael-dicicco/java/challenge167/circularprime.java
+  25. https://github.com/manwar/perlweeklychallenge-club/blob/master/challenge-167/michael-dicicco/python/task1.py
+  26. https://theweeklychallenge.org/blog/meet-the-champion-2022-02
+  27. https://theweeklychallenge.org/blog/meet-the-champion-038
+  28. https://ry.ca/2022/05/lanczos-approximation
+  29. https://github.com/manwar/perlweeklychallenge-club/blob/master/challenge-167/mohammad-anwar/perl/ch-1.pl
+  30. https://raku-musings.com/primarily-functional.html
+  31. https://jacoby.github.io/2022/06/02/perl-vs-the-world-crime-league-weekly-challenge-167.html
+  32. https://fluca1978.github.io/2022/05/30/PerlWeeklyChallenge167.html
+  33. https://pjcs-pwc.blogspot.com/2022/05/prime-eprim-mepri-imepr-rimep-and-gamma.html
+  34. https://blog.firedrake.org/archive/2022/06/The_Weekly_Challenge_167__Circling_the_Gamma.html
+  35. https://github.com/manwar/perlweeklychallenge-club
+  36. https://theweeklychallenge.org/blog/recap-challenge-167
+  37. https://theweeklychallenge.org/p5-reviews
+  38. https://theweeklychallenge.org/p6-reviews
+  39. https://theweeklychallenge.org/chart
+  40. https://github.com/mikedici
+  41. https://theweeklychallenge.org/blog/how-to-contribute
+  42. https://github.com/saiftynet/EZPWC
+  43. https://theweeklychallenge.org/blog/guest-contribution/#167
+  44. https://theweeklychallenge.org/blog/guest-contribution
+  45. https://blog.firedrake.org/
+  46. http://www.manwar.org/
+  47. https://en.wikipedia.org/wiki/Home_prime
+  48. https://oeis.org/A037274
+  49. https://theweeklychallenge.org/contact
+  50. http://www.Themefisher.com/
+
+   Hidden links:
+  52. https://twitter.com/PerlWChallenge
+  53. https://theweeklychallenge.org/rss.xml
+  54. https://www.nomtimes.co.uk/site/shop.do?cref=PerlBooks

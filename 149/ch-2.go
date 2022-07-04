@@ -1,3 +1,20 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-149/
+
+TASK #2 › Largest Square
+
+Submitted by: [39]Roger Bell_West
+     __________________________________________________________________
+
+   Given a number base, derive the largest perfect square with no repeated
+   digits and return it as a string. (For base>10, use ‘A’..‘Z’.)
+
+Example:
+
+    f(2)="1"
+    f(4)="3201"
+    f(10)="9814072356"
+    f(12)="B8750A649321"
+*/
 package main
 
 import (

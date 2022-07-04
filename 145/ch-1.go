@@ -1,6 +1,22 @@
-// You are given 2 arrays of same size, @a and @b.
-// Write a script to implement Dot Product.
-// Usage: go run ch-1.go 1,2,3 4,5,6
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-145/
+TASK #1 › Dot Product
+
+Submitted by: [45]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given 2 arrays of same size, @a and @b.
+
+   Write a script to implement Dot Product.
+
+Example:
+
+@a = (1, 2, 3);
+@b = (4, 5, 6);
+
+$dot_product = (1 * 4) + (2 * 5) + (3 * 6) => 4 + 10 + 18 => 32
+
+Usage: go run ch-1.go 1,2,3 4,5,6
+*/
 package main
 
 import (

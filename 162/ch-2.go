@@ -1,3 +1,22 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-162/
+
+Task 2: Wheatstone-Playfair
+
+Submitted by: [52]Roger Bell_West
+     __________________________________________________________________
+
+   Implement encryption and decryption using [53]the Wheatstone-Playfair
+   cipher.
+
+Examples:
+
+(These combine I and J, and use X as padding.)
+
+encrypt("playfair example", "hide the gold in the tree stump") = "bmodzbxdnabeku
+dmuixmmouvif"
+
+decrypt("perl and raku", "siderwrdulfipaarkcrw") = "thewexeklychallengex"
+*/
 package main
 
 import (

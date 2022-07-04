@@ -1,3 +1,13 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-003/
+
+Challenge #2
+
+     Create a script that generates Pascal Triangle. Accept number of
+     rows from the command line. The Pascal Triangle should have at least
+     3 rows. For more information about Pascal Triangle, check this
+     [17]wikipedia page.
+
+*/
 package main
 
 import (

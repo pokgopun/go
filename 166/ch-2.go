@@ -1,4 +1,41 @@
-/*
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-166/
+
+Task 2: K-Directory Diff
+
+Submitted by: [46]Ryan J Thompson
+     __________________________________________________________________
+
+   Given a few (three or more) directories (non-recursively), display a
+   side-by-side difference of files that are missing from at least one of
+   the directories. Do not display files that exist in every directory.
+
+   Since the task is non-recursive, if you encounter a subdirectory,
+   append a /, but otherwise treat it the same as a regular file.
+
+Example
+
+   Given the following directory structure:
+dir_a:
+Arial.ttf  Comic_Sans.ttf  Georgia.ttf  Helvetica.ttf  Impact.otf  Verdana.ttf
+Old_Fonts/
+
+dir_b:
+Arial.ttf  Comic_Sans.ttf  Courier_New.ttf  Helvetica.ttf  Impact.otf  Tahoma.tt
+f  Verdana.ttf
+
+dir_c:
+Arial.ttf  Courier_New.ttf  Helvetica.ttf  Impact.otf  Monaco.ttf  Verdana.ttf
+
+   The output should look similar to the following:
+dir_a          | dir_b           | dir_c
+-------------- | --------------- | ---------------
+Comic_Sans.ttf | Comic_Sans.ttf  |
+               | Courier_New.ttf | Courier_New.ttf
+Georgia.ttf    |                 |
+               |                 | Monaco.ttf
+Old_Fonts/     |                 |
+               | Tahoma.ttf      |
+
 go run ch-2.go ../../../challenge-001 ../../../challenge-002 ../../../challenge-003
 ../../../challenge-001|../../../challenge-002|../../../challenge-003|
 ----------------------|----------------------|----------------------|

@@ -1,0 +1,235 @@
+https://theweeklychallenge.org/blog/perl-weekly-challenge-149/
+   (BUTTON) Top
+
+   [1]logo (BUTTON)
+     * [2]Home
+     * [3]About
+     * [4]Chart
+     * [5]Champions
+     * [6]Team
+     * [7]Challenges
+     * [8]Perl/Review
+     * [9]Raku/Review
+     * [10]Recaps
+     * [11]Blogs
+     * [12]FAQ
+     * [13]Contact
+
+The Weekly Challenge - 149
+
+   Monday, Jan 24, 2022| Tags: Perl, Raku
+
+TABLE OF CONTENTS
+     __________________________________________________________________
+
+01. [14]HEADLINES
+
+02. [15]SPONSOR
+
+03. [16]RECAP
+
+04. [17]PERL REVIEW
+
+05. [18]RAKU REVIEW
+
+06. [19]CHART
+
+07. [20]NEW MEMBERS
+
+08. [21]GUESTS
+
+09. [22]TASK #1: Fibonacci Digit Sum
+
+10. [23]TASK #2: Largest Square
+
+HEADLINES
+     __________________________________________________________________
+
+   Welcome to the Week #149 with a good news that Pete Sergeant has
+   promised to sponsor the monthly prize for another 12 months. I would
+   like to take this opportunity to thank, Pete, for the support and
+   encouragement.
+
+   As shared last week, 23rd Jan 2022 was the last day for submitting the
+   details by the eligible champions. So, the final list has total of 32
+   eligible members. I will now start the work on the design. I will share
+   the design as soon as I am done. Or if you have any suggestions then
+   please do share with me.
+
+   Last week was very busy for me and I missed the deadline to submit the
+   solutions. I will try to find time this week to get back on track, wish
+   me luck.
+
+Blogs with Creative Title
+     __________________________________________________________________
+
+1. [24]Eban Cardano the Third with Raku and Perl by Arne Sommer.
+
+2. [25]It’s Triplets!: Weekly Challenge #148 by Dave Jacoby
+
+3. [26]Numbers in words and Cardano triplets by Peter Campbell Smith.
+
+4. [27]The Weekly Challenge 148: Eban, Cardana by Roger Bell_West.
+
+[28]GitHub Repository Stats
+     __________________________________________________________________
+
+1. Commits: 22,881 (+166)
+
+2. Pull Requests: 5,550 (+27)
+
+3. Contributors: 185
+
+4. Fork: 238 (+1)
+
+5. Stars: 118
+
+SPONSOR
+     __________________________________________________________________
+
+   Our solo sponsor Pete Sergeant has been a great support to keep us
+   motivated. We are lucky that he agreed to continue the journey with us
+   in the year 2021. I would like to personally thank Pete and his entire
+   team for their generosity. It would be great if we could add few more
+   to sponsor the prize money so that we could go back and declare weekly
+   champions as we have done in the past. I hope and wish this will become
+   possible in 2021. The amount doesn’t have to be huge. However, it would
+   be nice to show off bunch of supporters. If an organisation comes
+   forward and supports us then that would be the ultimate achievement.
+
+RECAP
+     __________________________________________________________________
+
+   Quick recap of [29]“The Weekly Challenge - 148” by Mohammad S Anwar.
+
+PERL REVIEW
+     __________________________________________________________________
+
+   Please check out Perl solutions review of the [30]“The Weekly Challenge
+   - 144” by Colin Crain.
+
+   If you missed any past reviews then please check out the
+   [31]collection.
+
+RAKU REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [32]collection.
+
+CHART
+     __________________________________________________________________
+
+   Please take a look at the [33]charts showing interesting data.
+
+   I would like to THANK every member of the team for their valuable
+   suggestions. Please do share your experience with us.
+
+NEW MEMBERS
+     __________________________________________________________________
+
+   Please find out [34]How to contribute?, if you have any doubts.
+
+   Please try the excellent tool [35]EZPWC created by respected member
+   Saif Ahmed of Team PWC.
+
+GUESTS
+     __________________________________________________________________
+
+   Please checkout the guest contributions for the [36]Week #148.
+
+   Please find [37]past solutions by respected guests. Please share your
+   creative solutions in other languages.
+
+TASK #1 › Fibonacci Digit Sum
+
+Submitted by: [38]Roger Bell_West
+     __________________________________________________________________
+
+   Given an input $N, generate the first $N numbers for which the sum of
+   their digits is a Fibonacci number.
+
+Example
+
+f(20)=[0, 1, 2, 3, 5, 8, 10, 11, 12, 14, 17, 20, 21, 23, 26, 30, 32, 35, 41, 44]
+
+TASK #2 › Largest Square
+
+Submitted by: [39]Roger Bell_West
+     __________________________________________________________________
+
+   Given a number base, derive the largest perfect square with no repeated
+   digits and return it as a string. (For base>10, use ‘A’..‘Z’.)
+
+Example:
+
+    f(2)="1"
+    f(4)="3201"
+    f(10)="9814072356"
+    f(12)="B8750A649321"
+     __________________________________________________________________
+
+   Last date to submit the solution 23:59 (UK Time) Sunday 30th January
+   2022.
+     __________________________________________________________________
+
+SO WHAT DO YOU THINK ?
+
+   If you have any suggestions or ideas then please do share with us.
+   [40]Contact with me
+
+   Copyright: 2019 - 2022 The Weekly Challenge. Theme Design and Developed
+   by [41]Themefisher.
+     *
+     *
+     *
+
+References
+
+   Visible links:
+   1. https://theweeklychallenge.org/
+   2. https://theweeklychallenge.org/
+   3. https://theweeklychallenge.org/about
+   4. https://theweeklychallenge.org/chart
+   5. https://theweeklychallenge.org/champions
+   6. https://theweeklychallenge.org/team
+   7. https://theweeklychallenge.org/challenges
+   8. https://theweeklychallenge.org/p5-reviews
+   9. https://theweeklychallenge.org/p6-reviews
+  10. https://theweeklychallenge.org/recaps
+  11. https://theweeklychallenge.org/blogs
+  12. https://theweeklychallenge.org/faq
+  13. https://theweeklychallenge.org/contact
+  14. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#HEADLINES
+  15. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#SPONSOR
+  16. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#RECAP
+  17. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#PERLREVIEW
+  18. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#RAKUREVIEW
+  19. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#CHART
+  20. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#NEWMEMBERS
+  21. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#GUESTS
+  22. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#TASK1
+  23. https://theweeklychallenge.org/blog/perl-weekly-challenge-149/#TASK2
+  24. https://raku-musings.com/eban-cardano.html
+  25. https://jacoby.github.io/2022/01/19/its-triplets-weekly-challenge-148.html
+  26. https://pjcs-pwc.blogspot.com/2022/01/numbers-in-words-and-cardano-triplets.html
+  27. https://blog.firedrake.org/archive/2022/01/The_Weekly_Challenge_148__Eban__Cardano.html
+  28. https://github.com/manwar/perlweeklychallenge-club
+  29. https://theweeklychallenge.org/blog/recap-challenge-148
+  30. https://theweeklychallenge.org/blog/review-challenge-144
+  31. https://theweeklychallenge.org/p5-reviews
+  32. https://theweeklychallenge.org/p6-reviews
+  33. https://theweeklychallenge.org/chart
+  34. https://theweeklychallenge.org/blog/how-to-contribute
+  35. https://github.com/saiftynet/EZPWC
+  36. https://theweeklychallenge.org/blog/guest-contribution/#148
+  37. https://theweeklychallenge.org/blog/guest-contribution
+  38. https://blog.firedrake.org/
+  39. https://blog.firedrake.org/
+  40. https://theweeklychallenge.org/contact
+  41. http://www.Themefisher.com/
+
+   Hidden links:
+  43. https://twitter.com/PerlWChallenge
+  44. https://theweeklychallenge.org/rss.xml
+  45. https://www.nomtimes.co.uk/site/shop.do?cref=PerlBooks

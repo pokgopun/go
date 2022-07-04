@@ -1,7 +1,17 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-019/
+
+Task #1
+     __________________________________________________________________
+     __________________________________________________________________
+
+     Write a script to display months from the year 1900 to 2019 where
+     you find 5 weekends i.e. 5 Friday, 5 Saturday and 5 Sunday.
+     __________________________________________________________________
+     __________________________________________________________________
+
+*/
 package main
 
-// Write a script to display months from the year 1900 to 2019 where you find 5 weekends i.e. 5 Friday, 5 Saturday and 5 Sunday.
-// From further analysis, this is only the case for a 31-days month which 1st of the month is Friday
 import (
 	"fmt"
 	"time"

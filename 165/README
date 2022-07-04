@@ -1,0 +1,286 @@
+https://theweeklychallenge.org/blog/perl-weekly-challenge-165/
+   (BUTTON) Top
+
+   [1]logo (BUTTON)
+     * [2]Home
+     * [3]About
+     * [4]Chart
+     * [5]Champions
+     * [6]Team
+     * [7]Challenges
+     * [8]Perl/Review
+     * [9]Raku/Review
+     * [10]Recaps
+     * [11]Blogs
+     * [12]FAQ
+     * [13]Contact
+
+The Weekly Challenge - 165
+
+   Monday, May 16, 2022| Tags: Perl, Raku
+
+TABLE OF CONTENTS
+     __________________________________________________________________
+
+01. [14]HEADLINES
+
+02. [15]SPONSOR
+
+03. [16]RECAP
+
+04. [17]PERL REVIEW
+
+05. [18]RAKU REVIEW
+
+06. [19]CHART
+
+07. [20]NEW MEMBERS
+
+08. [21]GUESTS
+
+09. [22]TASK #1: Scalable Vector Graphics (SVG)
+
+10. [23]TASK #2: Line of Best Fit
+
+HEADLINES
+     __________________________________________________________________
+
+   Welcome to the Week #165.
+
+   Let us all welcome 2 new members, James Marquis and Humberto Massa to
+   the Team PWC.
+
+   We had the pleasure to interview latest champion, [24]Matthew Neleigh.
+   It was great knowing him.
+
+   I would like to thank Ryan Thompson for suggesting cool tasks for the
+   weekly challenge. Thanks Early Bird Club members for helping with task
+   reviews.
+
+   Thanks Team PWC for reaching the milestone second time in a row i.e.
+   100+ regular contributions. We had 40 contributors in the Week #164.
+
+   The Week #164 seems to be special for guest contributors too. We had 14
+   contributors sharing solutions in 17 guest languages.
+
+   Talking about contributions, I only managed to find time for the task
+   Prime Palindrome in [25]Perl.
+
+   Good luck for the next challenge.
+
+Blogs with Creative Title
+     __________________________________________________________________
+
+1. [26]Primarily Happy by Arne Sommer.
+
+2. [27]Happy Happy Joy Joy by Colin Crain.
+
+3. [28]Shiny Happy Numbers by Dave Jacoby.
+
+4. [29]Palindromic primes and moody numbers by Peter Campbell Smith.
+
+5. [30]Happy Palindromes by Roger Bell_West.
+
+[31]GitHub Repository Stats
+     __________________________________________________________________
+
+1. Commits: 25,232 (+153)
+
+2. Pull Requests: 6,107 (+37)
+
+3. Contributors: 193 (+1)
+
+4. Fork: 248 (+1)
+
+5. Stars: 132 (+2)
+
+SPONSOR
+     __________________________________________________________________
+
+   Our solo sponsor Pete Sergeant has been a great support to keep us
+   motivated. We are lucky that he agreed to continue the journey with us
+   in the year 2022. I would like to personally thank Pete and his entire
+   team for their generosity. It would be great if we could add few more
+   to sponsor the prize money so that we could go back and declare weekly
+   champions as we have done in the past. I hope and wish this will become
+   possible in 2022. The amount doesn’t have to be huge. However, it would
+   be nice to show off bunch of supporters. If an organisation comes
+   forward and supports us then that would be the ultimate achievement.
+
+RECAP
+     __________________________________________________________________
+
+   Quick recap of [32]The Weekly Challenge - 164 by Mohammad S Anwar.
+
+PERL REVIEW
+     __________________________________________________________________
+
+   Please check out Perl solutions review of [33]The Weekly Challenge -
+   160 by Colin Crain.
+
+   If you missed any past reviews then please check out the
+   [34]collection.
+
+RAKU REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [35]collection.
+
+CHART
+     __________________________________________________________________
+
+   Please take a look at the [36]charts showing interesting data.
+
+   I would like to THANK every member of the team for their valuable
+   suggestions. Please do share your experience with us.
+
+NEW MEMBERS
+     __________________________________________________________________
+
+   James Marquis, an expert Perl hacker and [37]Humberto Massa, an expert
+   Raku hacker joined the Team PWC.
+
+   Please find out [38]How to contribute?, if you have any doubts.
+
+   Please try the excellent tool [39]EZPWC created by respected member
+   Saif Ahmed of Team PWC.
+
+GUESTS
+     __________________________________________________________________
+
+   Please checkout the guest contributions for the [40]Week #164.
+
+   Please find [41]past solutions by respected guests. Please share your
+   creative solutions in other languages.
+
+Task 1: Scalable Vector Graphics (SVG)
+
+Submitted by: [42]Ryan J Thompson
+     __________________________________________________________________
+
+   Scalable Vector Graphics (SVG) are not made of pixels, but lines,
+   ellipses, and curves, that can be scaled to any size without any loss
+   of quality. If you have ever tried to resize a small JPG or PNG, you
+   know what I mean by “loss of quality”! What many people do not know
+   about SVG files is, they are simply XML files, so they can easily be
+   generated programmatically.
+
+   For this task, you may use external library, such as Perl’s [43]SVG
+   library, maintained in recent years by our very own Mohammad S Anwar.
+   You can instead generate the XML yourself; it’s actually quite simple.
+   The source for the example image for Task #2 might be instructive.
+
+   Your task is to accept a series of points and lines in the following
+   format, one per line, in arbitrary order:
+
+   Point: x,y
+
+   Line: x1,y1,x2,y2
+
+Example:
+
+53,10
+53,10,23,30
+23,30
+
+   Then, generate an SVG file plotting all points, and all lines. If done
+   correctly, you can view the output .svg file in your browser.
+
+Task 2: Line of Best Fit
+
+Submitted by: [44]Ryan J Thompson
+     __________________________________________________________________
+
+   When you have a scatter plot of points, a line of best fit is the line
+   that best describes the relationship between the points, and is very
+   useful in statistics. Otherwise known as linear regression, here is an
+   example of what such a line might look like:
+
+   Hull
+
+   The method most often used is known as the [45]least squares method, as
+   it is straightforward and efficient, but you may use any method that
+   generates the correct result.
+
+   Calculate the line of best fit for the following 48 points:
+333,129  39,189 140,156 292,134 393,52  160,166 362,122  13,193
+341,104 320,113 109,177 203,152 343,100 225,110  23,186 282,102
+284,98  205,133 297,114 292,126 339,112 327,79  253,136  61,169
+128,176 346,72  316,103 124,162  65,181 159,137 212,116 337,86
+215,136 153,137 390,104 100,180  76,188  77,181  69,195  92,186
+275,96  250,147  34,174 213,134 186,129 189,154 361,82  363,89
+
+   Using your rudimentary graphing engine from Task #1, graph all points,
+   as well as the line of best fit.
+     __________________________________________________________________
+
+   Last date to submit the solution 23:59 (UK Time) Sunday 22nd May 2022.
+     __________________________________________________________________
+
+SO WHAT DO YOU THINK ?
+
+   If you have any suggestions or ideas then please do share with us.
+   [46]Contact with me
+
+   Copyright: 2019 - 2022 The Weekly Challenge. Theme Design and Developed
+   by [47]Themefisher.
+     *
+     *
+     *
+
+References
+
+   Visible links:
+   1. https://theweeklychallenge.org/
+   2. https://theweeklychallenge.org/
+   3. https://theweeklychallenge.org/about
+   4. https://theweeklychallenge.org/chart
+   5. https://theweeklychallenge.org/champions
+   6. https://theweeklychallenge.org/team
+   7. https://theweeklychallenge.org/challenges
+   8. https://theweeklychallenge.org/p5-reviews
+   9. https://theweeklychallenge.org/p6-reviews
+  10. https://theweeklychallenge.org/recaps
+  11. https://theweeklychallenge.org/blogs
+  12. https://theweeklychallenge.org/faq
+  13. https://theweeklychallenge.org/contact
+  14. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#HEADLINES
+  15. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#SPONSOR
+  16. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#RECAP
+  17. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#PERLREVIEW
+  18. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#RAKUREVIEW
+  19. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#CHART
+  20. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#NEWMEMBERS
+  21. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#GUESTS
+  22. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#TASK1
+  23. https://theweeklychallenge.org/blog/perl-weekly-challenge-165/#TASK2
+  24. https://theweeklychallenge.org/blog/meet-the-champion-2022-04
+  25. https://github.com/manwar/perlweeklychallenge-club/blob/master/challenge-164/mohammad-anwar/perl/ch-1.pl
+  26. https://raku-musings.com/primarily-happy.html
+  27. https://colincrain.com/2022/05/15/happy-happy-joy-joy
+  28. https://jacoby.github.io/2022/05/09/shiny-happy-numbers-weekly-challenge-164.html
+  29. https://pjcs-pwc.blogspot.com/2022/05/palindromic-primes-and-moody-numbers.html
+  30. https://blog.firedrake.org/archive/2022/05/The_Weekly_Challenge_164__Happy_Palindromes.html
+  31. https://github.com/manwar/perlweeklychallenge-club
+  32. https://theweeklychallenge.org/blog/recap-challenge-164
+  33. https://theweeklychallenge.org/blog/review-challenge-160
+  34. https://theweeklychallenge.org/p5-reviews
+  35. https://theweeklychallenge.org/p6-reviews
+  36. https://theweeklychallenge.org/chart
+  37. https://github.com/massa
+  38. https://theweeklychallenge.org/blog/how-to-contribute
+  39. https://github.com/saiftynet/EZPWC
+  40. https://theweeklychallenge.org/blog/guest-contribution/#164
+  41. https://theweeklychallenge.org/blog/guest-contribution
+  42. https://ry.ca/
+  43. https://metacpan.org/pod/SVG
+  44. https://ry.ca/
+  45. https://www.mathsisfun.com/data/least-squares-regression.html
+  46. https://theweeklychallenge.org/contact
+  47. http://www.Themefisher.com/
+
+   Hidden links:
+  49. https://twitter.com/PerlWChallenge
+  50. https://theweeklychallenge.org/rss.xml
+  51. https://www.nomtimes.co.uk/site/shop.do?cref=PerlBooks

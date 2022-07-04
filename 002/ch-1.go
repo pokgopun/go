@@ -1,4 +1,10 @@
-// Write a script or one-liner to remove leading zeros from positive numbers.
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-002/
+
+Challenge #1
+
+     Write a script or one-liner to remove leading zeros from positive
+     numbers.
+*/
 // Assume number can be float and zero
 package main
 

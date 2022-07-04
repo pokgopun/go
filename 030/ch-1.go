@@ -1,6 +1,16 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-030/
+Task #1
+     __________________________________________________________________
+     __________________________________________________________________
+
+     Write a script to list dates for Sunday Christmas between 2019 and
+     2100. For example, 25 Dec 2022 is Sunday.
+     __________________________________________________________________
+     __________________________________________________________________
+
+*/
 package main
 
-// Write a script to list dates for Sunday Christmas between 2019 and 2100. For example, 25 Dec 2022 is Sunday.
 import (
 	"fmt"
 	"time"

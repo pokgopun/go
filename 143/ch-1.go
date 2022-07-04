@@ -1,7 +1,24 @@
-/*
-You are given a string, $s, containing mathematical expression.
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-143/
+TASK #1 › Calculator
 
-Write a script to print the result of the mathematical expression. To keep it simple, please only accept + - * ().
+Submitted by: [46]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given a string, $s, containing mathematical expression.
+
+   Write a script to print the result of the mathematical expression. To
+   keep it simple, please only accept + - * ().
+
+Example 1:
+
+    Input: $s = "10 + 20 - 5"
+    Output: 25
+
+Example 2:
+
+    Input: $s = "(10 + 20 - 5) * 2"
+    Output: 50
+
 */
 package main
 

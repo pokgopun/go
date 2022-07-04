@@ -1,4 +1,13 @@
-// Write a script that can convert integers to and from a base35 representation, using the characters 0-9 and A-Y.
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-002/
+
+Challenge #2
+
+     Write a script that can convert integers to and from a base35
+     representation, using the characters 0-9 and A-Y. Dave Jacoby came
+     up with nice description about [16]base35, in case you needed some
+     background.
+
+*/
 package main
 
 import (

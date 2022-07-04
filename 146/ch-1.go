@@ -1,3 +1,13 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-146/
+
+TASK #1 › 10001st Prime Number
+
+Submitted by: [44]Mohammad S Anwar
+     __________________________________________________________________
+
+   Write a script to generate the 10001st prime number.
+
+*/
 // From https://math.stackexchange.com/questions/1885095/parametrization-of-cardano-triplet
 // a = 3k + 2
 // b^2 * c = (k+1)^2 * (8k + 5)

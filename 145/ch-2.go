@@ -1,4 +1,46 @@
-// Write a script to create a Palindromic Tree for the given string.
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-145/
+
+TASK #2 › Palindromic Tree
+
+Submitted by: [46]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given a string $s.
+
+   Write a script to create a Palindromic Tree for the given string.
+
+   I found this [47]blog exaplaining Palindromic Tree in detail.
+
+Example 1:
+
+Input: $s = 'redivider'
+Output: r redivider e edivide d divid i ivi v
+
+Example 2:
+
+Input: $s = 'deific'
+Output: d e i ifi f c
+
+Example 3:
+
+Input: $s = 'rotors'
+Output: r rotor o oto t s
+
+Example 4:
+
+Input: $s = 'challenge'
+Output: c h a l ll e n g
+
+Example 5:
+
+Input: $s = 'champion'
+Output: c h a m p i o n
+
+Example 6:
+
+Input: $s = 'christmas'
+Output: c h r i s t m a
+*/
 // All examples do not have a case that a letter happens more than twice in given words but we will handle the case as well
 // Here additional examples for the case: banana, redeemable, deterministic, heterogeneity, initiation, monopolous, honolulu
 package main

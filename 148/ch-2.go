@@ -1,3 +1,22 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-148/
+
+TASK #2 › Cardano Triplets
+
+Submitted by: [46]Mohammad S Anwar
+     __________________________________________________________________
+
+   Write a script to generate first 5 Cardano Triplets.
+
+     A triplet of positive integers (a,b,c) is called a Cardano Triplet
+     if it satisfies the below condition.
+
+   Cardano Triplets
+
+Example
+
+(2,1,5) is the first Cardano Triplets.
+
+*/
 // From https://math.stackexchange.com/questions/1885095/parametrization-of-cardano-triplet
 // a = 3k + 2
 // b^2 * c = (k+1)^2 * (8k + 5)

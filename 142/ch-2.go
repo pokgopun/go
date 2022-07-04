@@ -1,11 +1,23 @@
-/*
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-142/
+
 TASK #2 › Sleep Sort
+
+Submitted by: [52]Adam Russell
+     __________________________________________________________________
+
+   Another joke sort similar to JortSort suggested by champion Adam
+   Russell.
+
+   You are given a list of numbers.
+
+   Write a script to implement Sleep Sort. For more information, please
+   checkout this [53]post.
+ TASK #2 › Sleep Sort
 Submitted by: Adam Russell
 Another joke sort similar to JortSort suggested by champion Adam Russell.
 
 You are given a list of numbers.
 
-Write a script to implement Sleep Sort. For more information, please checkout this post.
 */
 package main
 

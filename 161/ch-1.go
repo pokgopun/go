@@ -1,3 +1,18 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-161/
+ Task 1: Abecedarian Words
+
+Submitted by: [53]Ryan J Thompson
+     __________________________________________________________________
+
+   An abecedarian word is a word whose letters are arranged in
+   alphabetical order. For example, “knotty” is an abecedarian word, but
+   “knots” is not. Output or return a list of all abecedarian words in the
+   [54]dictionary, sorted in decreasing order of length.
+
+   Optionally, using only abecedarian words, leave a short comment in your
+   code to make your reviewer smile.
+
+*/
 package main
 
 import (

@@ -1,0 +1,301 @@
+https://theweeklychallenge.org/blog/perl-weekly-challenge-142/
+   (BUTTON) Top
+
+   [1]logo (BUTTON)
+     * [2]Home
+     * [3]About
+     * [4]Chart
+     * [5]Champions
+     * [6]Team
+     * [7]Challenges
+     * [8]Perl/Review
+     * [9]Raku/Review
+     * [10]Recaps
+     * [11]Blogs
+     * [12]FAQ
+     * [13]Contact
+
+The Weekly Challenge - 142
+
+   Monday, Dec 6, 2021| Tags: Perl, Raku
+
+TABLE OF CONTENTS
+     __________________________________________________________________
+
+01. [14]HEADLINES
+
+02. [15]SPONSOR
+
+03. [16]RECAP
+
+04. [17]PERL REVIEW
+
+05. [18]RAKU REVIEW
+
+06. [19]CHART
+
+07. [20]NEW MEMBERS
+
+08. [21]GUESTS
+
+09. [22]TASK #1: Divisor Last Digit
+
+10. [23]TASK #2: Sleep Sort
+
+HEADLINES
+     __________________________________________________________________
+
+   Today is the first Monday of the month. You guessed it right, time to
+   declare the Champion of The Weekly Challenge. With great pride, I
+   declare W. Luis Mochan as our next Champion. Luis joined the Team PWC
+   in the Week 88. Till date, he has contributed 102 Perl solutions and 51
+   blogs. He only missed 3 weeks ever i.e. 103, 104 and 105. He is
+   currently ranked 30th with score 306 in the leaderboard. He also became
+   the 52nd member qualified for the 1000 days celebration.
+
+   Talking about the celebration, so far, we have received £582.81 in
+   donations. As of today, 29 of 52 members have responded to my email. I
+   am hoping in the next few days, remaining would get back with the
+   details (T-shirt size and delivery address). I would like to thank each
+   and every sponsors. Thanks to all members who shared the details with
+   me. I can assure you that your data is in safe hands.
+
+   I am keeping the [24]blog post for up to date. Please do check out if
+   you are interested.
+
+   As soon as I get ithe details of the remaining qualified members, I
+   would start designing the T-shirt and prepare the order so that it can
+   be dispatch on time.
+
+   As you all know, we are running Advent Calendar for the 3rd time in a
+   row. I would like to thank all the contributors to the [25]Advent
+   Calendar 2021.
+
+   Thank you, Peter Campbell Smith, for your [26]first blog of The Weekly
+   Challenge.
+
+   Recently joined member, Kaushik Tunuguntla, shared his first solutions
+   in [27]Perl. Not only that he also shared the [28]blog post. Thank you,
+   Kaushik.
+
+Advent Calendar 2021
+     __________________________________________________________________
+
+[29]Day 1: Palindrome Number by Abigail.
+
+[30]Day 2: Edit Distance by Dave Jacoby.
+
+[31]Day 3: Caesar Cipher by Arne Sommer.
+
+[32]Day 4: Triangle Sum by Flavio Poletti.
+
+[33]Day 5: Pack a Spiral by Simon Green.
+
+[34]Day 6: Aaron Smith by Aaron Smith.
+
+Blogs with Creative Title
+     __________________________________________________________________
+
+1. [35]Like, It’s Just the First Ten Numbers Man! by Adam Russell.
+
+2. [36]Numbly Numbers with Raku by Arne Sommer.
+
+3. [37]I Like Numbers And Hate Division: The Weekly Challenge #141 by Dave
+Jacoby
+
+4. [38]Divisibility, Sieves and Masks - PWC 141 by Kaushik Tunuguntla.
+
+5. [39]Some prime thoughts on divisors by Peter Campbell Smith.
+
+6. [40]The Weekly Challenge 141: Binary and Tabular by Roger Bell_West.
+
+   Let us share some interesting stats from the [41]GitHub repository.
+
+1. Commits: 21,814 (+131)
+
+2. Pull Requests: 5,327 (+32)
+
+3. Contributors: 183
+
+4. Fork: 233
+
+5. Stars: 114 (+1)
+
+   Last but not least, I would like to thank each and every member for
+   their support and encouragement.
+
+SPONSOR
+     __________________________________________________________________
+
+   Our solo sponsor Pete Sergeant has been a great support to keep us
+   motivated. We are lucky that he agreed to continue the journey with us
+   in the year 2021. I would like to personally thank Pete and his entire
+   team for their generosity. It would be great if we could add few more
+   to sponsor the prize money so that we could go back and declare weekly
+   champions as we have done in the past. I hope and wish this will become
+   possible in 2021. The amount doesn’t have to be huge. However, it would
+   be nice to show off bunch of supporters. If an organisation comes
+   forward and supports us then that would be the ultimate achievement.
+
+RECAP
+     __________________________________________________________________
+
+   Quick recap of [42]“The Weekly Challenge - 141” by Mohammad S Anwar.
+
+PERL REVIEW
+     __________________________________________________________________
+
+   Please check out Perl solutions review of the [43]“The Weekly Challenge
+   - 137” by Colin Crain.
+
+   If you missed any past reviews then please check out the
+   [44]collection.
+
+RAKU REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [45]collection.
+
+CHART
+     __________________________________________________________________
+
+   Please take a look at the [46]charts showing interesting data.
+
+   I would like to THANK every member of the team for their valuable
+   suggestions. Please do share your experience with us.
+
+NEW MEMBERS
+     __________________________________________________________________
+
+   Please find out [47]How to contribute?, if you have any doubts.
+
+   Please try the excellent tool [48]EZPWC created by respected member
+   Saif Ahmed of Team PWC.
+
+GUESTS
+     __________________________________________________________________
+
+   Please checkout the guest contributions for the [49]Week #141.
+
+   Please find [50]past solutions by respected guests. Please share your
+   creative solutions in other languages.
+
+TASK #1 › Divisor Last Digit
+
+Submitted by: [51]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given positive integers, $m and $n.
+
+   Write a script to find total count of divisors of $m having last digit
+   $n.
+
+Example 1:
+
+Input: $m = 24, $n = 2
+Output: 2
+
+The divisors of 24 are 1, 2, 3, 4, 6, 8 and 12.
+There are only 2 divisors having last digit 2 are 2 and 12.
+
+Example 2:
+
+Input: $m = 30, $n = 5
+Output: 2
+
+The divisors of 30 are 1, 2, 3, 5, 6, 10 and 15.
+There are only 2 divisors having last digit 5 are 5 and 15.
+
+TASK #2 › Sleep Sort
+
+Submitted by: [52]Adam Russell
+     __________________________________________________________________
+
+   Another joke sort similar to JortSort suggested by champion Adam
+   Russell.
+
+   You are given a list of numbers.
+
+   Write a script to implement Sleep Sort. For more information, please
+   checkout this [53]post.
+     __________________________________________________________________
+
+   Last date to submit the solution 23:59 (UK Time) Sunday 12th December
+   2021.
+     __________________________________________________________________
+
+SO WHAT DO YOU THINK ?
+
+   If you have any suggestions or ideas then please do share with us.
+   [54]Contact with me
+
+   Copyright: 2019 - 2022 The Weekly Challenge. Theme Design and Developed
+   by [55]Themefisher.
+     *
+     *
+     *
+
+References
+
+   Visible links:
+   1. https://theweeklychallenge.org/
+   2. https://theweeklychallenge.org/
+   3. https://theweeklychallenge.org/about
+   4. https://theweeklychallenge.org/chart
+   5. https://theweeklychallenge.org/champions
+   6. https://theweeklychallenge.org/team
+   7. https://theweeklychallenge.org/challenges
+   8. https://theweeklychallenge.org/p5-reviews
+   9. https://theweeklychallenge.org/p6-reviews
+  10. https://theweeklychallenge.org/recaps
+  11. https://theweeklychallenge.org/blogs
+  12. https://theweeklychallenge.org/faq
+  13. https://theweeklychallenge.org/contact
+  14. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#HEADLINES
+  15. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#SPONSOR
+  16. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#RECAP
+  17. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#PERLREVIEW
+  18. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#RAKUREVIEW
+  19. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#CHART
+  20. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#NEWMEMBERS
+  21. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#GUESTS
+  22. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#TASK1
+  23. https://theweeklychallenge.org/blog/perl-weekly-challenge-142/#TASK2
+  24. https://theweeklychallenge.org/blog/1000-days
+  25. https://theweeklychallenge.org/blog/advent-calendar-2021
+  26. https://pjcs-pwc.blogspot.com/2021/12/perl-weekly-challenge-141-task-1-reads.html
+  27. https://github.com/manwar/perlweeklychallenge-club/tree/master/challenge-141/kaushik-tunuguntla/perl
+  28. https://notmondayagain.blogspot.com/2021/12/divisibility-sieves-and-masks-pwc-141.html
+  29. https://theweeklychallenge.org/blog/advent-calendar-2021-12-01
+  30. https://theweeklychallenge.org/blog/advent-calendar-2021-12-02
+  31. https://theweeklychallenge.org/blog/advent-calendar-2021-12-03
+  32. https://theweeklychallenge.org/blog/advent-calendar-2021-12-04
+  33. https://theweeklychallenge.org/blog/advent-calendar-2021-12-05
+  34. https://theweeklychallenge.org/blog/advent-calendar-2021-12-06
+  35. http://www.rabbitfarm.com/cgi-bin/blosxom/2021/12/05/perl
+  36. https://raku-musings.com/numbly-numbers.html
+  37. https://jacoby.github.io/2021/11/29/i-like-numbers-and-hate-division-the-weekly-challenge-141.html
+  38. https://notmondayagain.blogspot.com/2021/12/divisibility-sieves-and-masks-pwc-141.html
+  39. https://pjcs-pwc.blogspot.com/2021/12/perl-weekly-challenge-141-task-1-reads.html
+  40. https://blog.firedrake.org/archive/2021/11/The_Weekly_Challenge_141__Binary_and_Tabular.html
+  41. https://github.com/manwar/perlweeklychallenge-club
+  42. https://theweeklychallenge.org/blog/recap-challenge-141
+  43. https://theweeklychallenge.org/blog/review-challenge-137
+  44. https://theweeklychallenge.org/p5-reviews
+  45. https://theweeklychallenge.org/p6-reviews
+  46. https://theweeklychallenge.org/chart
+  47. https://theweeklychallenge.org/blog/how-to-contribute
+  48. https://github.com/saiftynet/EZPWC
+  49. https://theweeklychallenge.org/blog/guest-contribution/#141
+  50. https://theweeklychallenge.org/blog/guest-contribution
+  51. http://www.manwar.org/
+  52. https://github.com/adamcrussell
+  53. https://iq.opengenus.org/sleep-sort
+  54. https://theweeklychallenge.org/contact
+  55. http://www.Themefisher.com/
+
+   Hidden links:
+  57. https://twitter.com/PerlWChallenge
+  58. https://theweeklychallenge.org/rss.xml
+  59. https://www.nomtimes.co.uk/site/shop.do?cref=PerlBooks

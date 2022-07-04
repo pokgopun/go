@@ -1,0 +1,282 @@
+https://theweeklychallenge.org/blog/perl-weekly-challenge-170/
+   (BUTTON) Top
+
+   [1]logo (BUTTON)
+     * [2]Home
+     * [3]About
+     * [4]Chart
+     * [5]Champions
+     * [6]Team
+     * [7]Challenges
+     * [8]Perl/Review
+     * [9]Raku/Review
+     * [10]Recaps
+     * [11]Blogs
+     * [12]FAQ
+     * [13]Contact
+
+The Weekly Challenge - 170
+
+   Monday, Jun 20, 2022| Tags: Perl, Raku
+
+TABLE OF CONTENTS
+     __________________________________________________________________
+
+01. [14]HEADLINES
+
+02. [15]SPONSOR
+
+03. [16]RECAP
+
+04. [17]PERL REVIEW
+
+05. [18]RAKU REVIEW
+
+06. [19]CHART
+
+07. [20]NEW MEMBERS
+
+08. [21]GUESTS
+
+09. [22]TASK #1: Primorial Numbers
+
+10. [23]TASK #2: Kronecker Product
+
+HEADLINES
+     __________________________________________________________________
+
+   Welcome to a yet another fun Week #170.
+
+   We have new member Dario Mazzeo, an experienced Perl hacker, joining
+   the Team PWC.
+
+   Congratulation everyone for reaching the target of 100+ contributions
+   once again.
+
+   Even the guest contributions is becoming popular among the team
+   members.
+
+   Once again, I couldn’t participate in the weekly challenge. Hay Fever
+   has troubled me a lot. Feeling little better today. I am planning to
+   get back to YouTube live coding. Please wish me luck.
+
+   Not sure, if you know this, we have father-son duo in the team and they
+   are Robert DiCicco and Michael DiCicco.
+
+   Keep sharing knowledge and spread the word among friends.
+
+   Good luck for the next challenge.
+
+Blogs with Creative Title
+     __________________________________________________________________
+
+1. [24]Brilliantly Discover Achilles’ Imperfection by Adam Russell.
+
+2. [25]An Abundance of Numbers by Arne Sommer.
+
+3. [26]Number Theoretic Quiz by Cheok-Yin Fung.
+
+4. [27]Twenty-Two Brilliant Numbers by Colin Crain.
+
+5. [28]A Tendon-ous Task by Colin Crain.
+
+6. [29]primes and more primes! by Luca Ferrari.
+
+7. [30]Brilliant and Achilles by Peter Campbell Smith.
+
+8. [31]The Brilliance of Achilles by Roger Bell_West.
+
+9, [32]It’s all about the numbers by Simon Green.
+
+[33]GitHub Repository Stats
+     __________________________________________________________________
+
+1. Commits: 26,020 (+204)
+
+2. Pull Requests: 6,291 (+44)
+
+3. Contributors: 197
+
+4. Fork: 251 (+1)
+
+5. Stars: 138
+
+SPONSOR
+     __________________________________________________________________
+
+   Our solo sponsor Pete Sergeant has been a great support to keep us
+   motivated. We are lucky that he agreed to continue the journey with us
+   in the year 2022. I would like to personally thank Pete and his entire
+   team for their generosity. It would be great if we could add few more
+   to sponsor the prize money so that we could go back and declare weekly
+   champions as we have done in the past. I hope and wish this will become
+   possible in 2022. The amount doesn’t have to be huge. However, it would
+   be nice to show off bunch of supporters. If an organisation comes
+   forward and supports us then that would be the ultimate achievement.
+
+RECAP
+     __________________________________________________________________
+
+   Quick recap of [34]The Weekly Challenge - 169 by Mohammad S Anwar.
+
+PERL REVIEW
+     __________________________________________________________________
+
+   Please check out Perl solutions review of [35]The Weekly Challenge -
+   163 by Colin Crain.
+
+   If you missed any past reviews then please check out the
+   [36]collection.
+
+RAKU REVIEW
+     __________________________________________________________________
+
+   If you missed any past reviews then please check out the
+   [37]collection.
+
+CHART
+     __________________________________________________________________
+
+   Please take a look at the [38]charts showing interesting data.
+
+   I would like to THANK every member of the team for their valuable
+   suggestions. Please do share your experience with us.
+
+NEW MEMBERS
+     __________________________________________________________________
+
+Dario Mazzeo, an experienced Perl hacker.
+
+   Please find out [39]How to contribute?, if you have any doubts.
+
+   Please try the excellent tool [40]EZPWC created by respected member
+   Saif Ahmed of Team PWC.
+
+GUESTS
+     __________________________________________________________________
+
+   Please checkout the guest contributions for the [41]Week #169.
+
+   Please find [42]past solutions by respected guests. Please share your
+   creative solutions in other languages.
+
+Task 1: Primorial Numbers
+
+Submitted by: [43]Mohammad S Anwar
+     __________________________________________________________________
+
+   Write a script to generate first 10 Primorial Numbers.
+
+     Primorial numbers are those formed by multiplying successive prime
+     numbers.
+
+   For example,
+P(0) = 1    (1)
+P(1) = 2    (1x2)
+P(2) = 6    (1x2×3)
+P(3) = 30   (1x2×3×5)
+P(4) = 210  (1x2×3×5×7)
+
+Task 2: Kronecker Product
+
+Submitted by: [44]Mohammad S Anwar
+     __________________________________________________________________
+
+   You are given 2 matrices.
+
+   Write a script to implement Kronecker Product on the given 2 matrices.
+
+   For more information, please refer [45]wikipedia page.
+
+   For example,
+A = [ 1 2 ]
+    [ 3 4 ]
+
+B = [ 5 6 ]
+    [ 7 8 ]
+
+A x B = [ 1 x [ 5 6 ]   2 x [ 5 6 ] ]
+        [     [ 7 8 ]       [ 7 8 ] ]
+        [ 3 x [ 5 6 ]   4 x [ 5 6 ] ]
+        [     [ 7 8 ]       [ 7 8 ] ]
+
+      = [ 1x5 1x6 2x5 2x6 ]
+        [ 1x7 1x8 2x7 2x8 ]
+        [ 3x5 3x6 4x5 4x6 ]
+        [ 3x7 3x8 4x7 4x8 ]
+
+      = [  5  6 10 12 ]
+        [  7  8 14 16 ]
+        [ 15 18 20 24 ]
+        [ 21 24 28 32 ]
+     __________________________________________________________________
+
+   Last date to submit the solution 23:59 (UK Time) Sunday 26th June 2022.
+     __________________________________________________________________
+
+SO WHAT DO YOU THINK ?
+
+   If you have any suggestions or ideas then please do share with us.
+   [46]Contact with me
+
+   Copyright: 2019 - 2022 The Weekly Challenge. Theme Design and Developed
+   by [47]Themefisher.
+     *
+     *
+     *
+
+References
+
+   Visible links:
+   1. https://theweeklychallenge.org/
+   2. https://theweeklychallenge.org/
+   3. https://theweeklychallenge.org/about
+   4. https://theweeklychallenge.org/chart
+   5. https://theweeklychallenge.org/champions
+   6. https://theweeklychallenge.org/team
+   7. https://theweeklychallenge.org/challenges
+   8. https://theweeklychallenge.org/p5-reviews
+   9. https://theweeklychallenge.org/p6-reviews
+  10. https://theweeklychallenge.org/recaps
+  11. https://theweeklychallenge.org/blogs
+  12. https://theweeklychallenge.org/faq
+  13. https://theweeklychallenge.org/contact
+  14. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#HEADLINES
+  15. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#SPONSOR
+  16. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#RECAP
+  17. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#PERLREVIEW
+  18. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#RAKUREVIEW
+  19. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#CHART
+  20. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#NEWMEMBERS
+  21. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#GUESTS
+  22. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#TASK1
+  23. https://theweeklychallenge.org/blog/perl-weekly-challenge-170/#TASK2
+  24. http://www.rabbitfarm.com/cgi-bin/blosxom/perl/2022/06/19
+  25. https://raku-musings.com/ambundance-numbers.html
+  26. https://e7-87-83.github.io/coding/challenge_169.html
+  27. https://colincrain.com/2022/06/17/twenty-two-brilliant-numbers
+  28. https://colincrain.com/2022/06/18/a-tendon-ous-task
+  29. https://fluca1978.github.io/2022/06/13/PerlWeeklyChallenge169.html
+  30. https://pjcs-pwc.blogspot.com/2022/06/brilliant-and-achilles.html
+  31. https://blog.firedrake.org/archive/2022/06/The_Weekly_Challenge_169__The_Brilliance_of_Achilles.html
+  32. https://dev.to/simongreennet/its-all-about-the-numbers-4fh5
+  33. https://github.com/manwar/perlweeklychallenge-club
+  34. https://theweeklychallenge.org/blog/recap-challenge-169
+  35. https://theweeklychallenge.org/blog/review-challenge-163
+  36. https://theweeklychallenge.org/p5-reviews
+  37. https://theweeklychallenge.org/p6-reviews
+  38. https://theweeklychallenge.org/chart
+  39. https://theweeklychallenge.org/blog/how-to-contribute
+  40. https://github.com/saiftynet/EZPWC
+  41. https://theweeklychallenge.org/blog/guest-contribution/#169
+  42. https://theweeklychallenge.org/blog/guest-contribution
+  43. http://www.manwar.org/
+  44. http://www.manwar.org/
+  45. https://en.wikipedia.org/wiki/Kronecker_product
+  46. https://theweeklychallenge.org/contact
+  47. http://www.Themefisher.com/
+
+   Hidden links:
+  49. https://twitter.com/PerlWChallenge
+  50. https://theweeklychallenge.org/rss.xml
+  51. https://www.nomtimes.co.uk/site/shop.do?cref=PerlBooks

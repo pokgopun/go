@@ -1,3 +1,12 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-019/
+
+Task #2
+     __________________________________________________________________
+     __________________________________________________________________
+
+     Write a script that can wrap the given paragraph at a specified
+     column using the [20]greedy algorithm.
+*/
 package main
 
 import (

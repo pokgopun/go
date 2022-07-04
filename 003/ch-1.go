@@ -1,3 +1,12 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-003/
+
+Challenge #1
+
+     Create a script to generate 5-smooth numbers, whose prime divisors
+     are less or equal to 5. They are also called Hamming/Regular/Ugly
+     numbers. For more information, please check this [16]wikipedia.
+
+*/
 package main
 
 import (

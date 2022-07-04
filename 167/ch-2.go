@@ -1,3 +1,25 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-167/
+
+Task 2: Gamma Function
+
+Submitted by: [43]Mohammad S Anwar
+     __________________________________________________________________
+
+   Implement subroutine gamma() using the [44]Lanczos approximation
+   method.
+
+[2022-05-31]
+
+   Ryan Thompson wrote an interesting blog explaining the subject in
+   details. Highly recommended if you are looking for more information.
+   [45]BLOG.
+
+Example
+
+print gamma(3); # 1.99
+print gamma(5); # 24
+print gamma(7); # 719.99
+*/
 package main
 
 import (

@@ -1,13 +1,23 @@
-/*
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-141/
+
 TASK #2 › Like Numbers
-Submitted by: Mohammad S Anwar
-You are given positive integers, $m and $n.
 
-Write a script to find total count of integers created using the digits of $m which is also divisible by $n.
+Submitted by: [40]Mohammad S Anwar
+     __________________________________________________________________
 
-Repeating of digits are not allowed. Order/Sequence of digits can’t be altered. You are only allowed to use (n-1) digits at the most. For example, 432 is not acceptable integer created using the digits of 1234. Also for 1234, you can only have integers having no more than three digits.
+   You are given positive integers, $m and $n.
+
+   Write a script to find total count of integers created using the digits
+   of $m which is also divisible by $n.
+
+   Repeating of digits are not allowed. Order/Sequence of digits can’t be
+   altered. You are only allowed to use (n-1) digits at the most. For
+   example, 432 is not acceptable integer created using the digits of
+   1234. Also for 1234, you can only have integers having no more than
+   three digits.
 
 Example 1:
+
 Input: $m = 1234, $n = 2
 Output: 9
 
@@ -16,7 +26,9 @@ Possible integers created using the digits of 1234 are:
 
 There are 9 integers divisible by 2 such as:
 2, 4, 12, 14, 24, 34, 124, 134 and 234.
+
 Example 2:
+
 Input: $m = 768, $n = 4
 Output: 3
 

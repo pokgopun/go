@@ -1,3 +1,24 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-147/
+
+TASK #2 › Pentagon Numbers
+
+Submitted by: [41]Mohammad S Anwar
+     __________________________________________________________________
+
+   Write a script to find the first pair of Pentagon Numbers whose sum and
+   difference are also a Pentagon Number.
+
+     Pentagon numbers can be defined as P(n) = n(3n - 1)/2.
+
+Example
+
+The first 10 Pentagon Numbers are:
+1, 5, 12, 22, 35, 51, 70, 92, 117 and 145.
+
+P(4) + P(7) = 22 + 70 = 92 = P(8)
+but
+P(4) - P(7) = |22 - 70| = 48 is not a Pentagon Number.
+*/
 package main
 
 import (

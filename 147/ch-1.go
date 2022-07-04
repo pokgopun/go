@@ -1,3 +1,22 @@
+/* https://theweeklychallenge.org/blog/perl-weekly-challenge-147/
+TASK #1 › Truncatable Prime
+
+Submitted by: [40]Mohammad S Anwar
+     __________________________________________________________________
+
+   Write a script to generate first 20 left-truncatable prime numbers in
+   base 10.
+
+     In number theory, a left-truncatable prime is a prime number which,
+     in a given base, contains no 0, and if the leading left digit is
+     successively removed, then all resulting numbers are primes.
+
+Example
+
+9137 is one such left-truncatable prime since 9137, 137, 37 and 7 are all prime
+numbers.
+
+*/
 package main
 
 import (
