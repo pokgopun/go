@@ -58,7 +58,7 @@ func (p *processor) Totient(n uint) (r uint) {
 }
 
 func (p *processor) IsPerfect(n uint) bool {
-	if n < 2 || n%2 == 0 {
+	if n < 2 || n%2 == 0 || n > 3 && big.NewInt(int64(n)).ProbablyPrime(0) {
 		return false
 	}
 	// check for fastperfect
