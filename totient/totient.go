@@ -18,7 +18,7 @@ import (
 type processor struct {
 	m map[uint]uint
 	//	one, min, max *big.Int
-	mot uint
+	//mot uint
 	//fp  map[uint]bool
 }
 
@@ -31,7 +31,7 @@ func New(n uint) processor {
 	*/
 	//return processor{m: make(map[uint]uint), one: big.NewInt(1), mot: 1, fp: fp}
 	//return processor{m: make(map[uint]uint), mot: 1, fp: fp}
-	return processor{m: make(map[uint]uint), mot: 1}
+	return processor{m: make(map[uint]uint)}
 }
 
 func (p *processor) Totient(n uint) (r uint) {
