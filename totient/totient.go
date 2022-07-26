@@ -16,35 +16,40 @@ import (
 )
 
 type processor struct {
-	m             map[uint]uint
-	one, min, max *big.Int
-	mot           uint
-	fp            map[uint]bool
+	m map[uint]uint
+	//	one, min, max *big.Int
+	mot uint
+	//fp  map[uint]bool
 }
 
 func New(n uint) processor {
-	fp := make(map[uint]bool)
-	for _, v := range fastperfect(n) {
-		fp[v] = true
-	}
-	return processor{m: make(map[uint]uint), one: big.NewInt(1), mot: 1, fp: fp}
+	/*
+		fp := make(map[uint]bool)
+		for _, v := range fastperfect(n) {
+			fp[v] = true
+		}
+	*/
+	//return processor{m: make(map[uint]uint), one: big.NewInt(1), mot: 1, fp: fp}
+	//return processor{m: make(map[uint]uint), mot: 1, fp: fp}
+	return processor{m: make(map[uint]uint), mot: 1}
 }
 
 func (p *processor) Totient(n uint) (r uint) {
 	if n == 1 {
 		return 1
 	}
+	/**/
 	r, ok := p.m[n]
 	if ok {
 		return r
 	}
+	/**/
 	r = 1 // 1 is relatively prime to any number
-	//m := big.NewInt(int64(n))
-	p.max = big.NewInt(int64(n))
-	//for i := big.NewInt(2); i.Cmp(m) == -1; i.Add(i, p.one) {
-	for p.min = big.NewInt(2); p.min.Cmp(p.max) == -1; p.min.Add(p.min, p.one) {
-		//if new(big.Int).GCD(nil, nil, i, m).Cmp(p.one) == 0 {
-		if new(big.Int).GCD(nil, nil, p.min, p.max).Cmp(p.one) == 0 {
+	//p.max = big.NewInt(int64(n))
+	//for p.min = big.NewInt(2); p.min.Cmp(p.max) == -1; p.min.Add(p.min, p.one) {
+	//if new(big.Int).GCD(nil, nil, p.min, p.max).Cmp(p.one) == 0 {
+	for i := uint(2); i < n; i++ {
+		if GCDEuclidean(i, n) == 1 {
 			r++
 		}
 	}
@@ -57,33 +62,9 @@ func (p *processor) IsPerfect(n uint) bool {
 		return false
 	}
 	// check for fastperfect
-	if p.fp[n] {
-		return true
-	}
-	// check if n is multiple of 3 as well as isPrime(4*3^k + 1)
 	/*
-		p.mot = 1
-		if n%3 == 0 {
-			pp := n / 3
-			if big.NewInt(int64(pp)).ProbablyPrime(0) {
-				pp--
-				if pp%4 == 0 {
-					pp /= 4
-				} else {
-					pp = 0
-				}
-			} else {
-				pp = 0
-			}
-			for p.mot < n {
-				if pp != 0 && pp*p.mot == n {
-					return true
-				}
-				p.mot *= 3
-			}
-			if p.mot == n {
-				return true
-			}
+		if p.fp[n] {
+			return true
 		}
 	*/
 	var sum, tmp uint = 1, p.Totient(n)
@@ -149,4 +130,15 @@ func fastperfect(n uint) (r []uint) {
 		}
 	}
 	return r
+}
+func GCDEuclidean(a, b uint) uint {
+	for a != b {
+		if a > b {
+			a -= b
+		} else {
+			b -= a
+		}
+	}
+
+	return a
 }
