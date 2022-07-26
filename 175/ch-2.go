@@ -12,56 +12,27 @@ Output
 package main
 
 import (
-	"fmt"
-	"math/big"
+	"io"
+	"os"
+	"strconv"
+	"strings"
+
+	"github.com/pokgopun/go/totient"
 )
 
-var one = big.NewInt(1)
-
 func main() {
-	var t Totient
-	cntdwn := 20
-	for i := int64(2); i < 6000; i++ {
-		t.Set(big.NewInt(i))
-		if t.IsPerfect() {
-			fmt.Println(i)
+	var cntdwn uint = 20
+	p := totient.New(cntdwn)
+	var b strings.Builder
+	for i := uint(3); i < 200_000; i += 2 {
+		if p.IsPerfect(i) {
+			b.WriteString(", " + strconv.FormatUint(uint64(i), 10))
+			//fmt.Println(i)
 			cntdwn--
 		}
 		if cntdwn == 0 {
 			break
 		}
 	}
-}
-
-type Totient struct {
-	n, val *big.Int
-}
-
-func totient(n *big.Int) (r *big.Int) {
-	r = big.NewInt(1) // 1 is relatively prime to any number
-	//one := big.NewInt(1)
-	for i := big.NewInt(2); i.Cmp(n) == -1; i.Add(i, one) {
-		if new(big.Int).GCD(nil, nil, i, n).Cmp(one) == 0 {
-			r.Add(r, one)
-		}
-	}
-	return r
-}
-
-func (t *Totient) Set(n *big.Int) *big.Int {
-	t.n = n
-	t.val = totient(n)
-	return t.val
-}
-
-func (t *Totient) IsPerfect() bool {
-	sum := big.NewInt(1)
-	tmp := new(big.Int).Set(t.val)
-	for tmp.Cmp(one) == 1 {
-		//fmt.Println("tmp = ", tmp)
-		sum.Add(sum, tmp)
-		tmp = totient(tmp)
-	}
-	//fmt.Println("sum =", sum)
-	return sum.Cmp(t.n) == 0
+	io.WriteString(os.Stdout, (b.String()[2:])+"\n")
 }
