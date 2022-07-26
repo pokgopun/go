@@ -12,26 +12,24 @@ Output
 package main
 
 import (
-	"io"
-	"os"
-	"strconv"
-	"strings"
+	"fmt"
 
 	"github.com/pokgopun/go/totient"
 )
 
 func main() {
-	p := totient.New()
-	cntdwn := 20
-	var b strings.Builder
-	for i := uint(0); i < 10_000; i++ {
+	var cntdwn uint = 25
+	p := totient.New(cntdwn)
+	//var b strings.Builder
+	for i := uint(3); i < 200_000; i += 2 {
 		if p.IsPerfect(i) {
-			b.WriteString(", " + strconv.FormatUint(uint64(i), 10))
+			//b.WriteString(", " + strconv.FormatUint(uint64(i), 10))
+			fmt.Println(i)
 			cntdwn--
 		}
 		if cntdwn == 0 {
 			break
 		}
 	}
-	io.WriteString(os.Stdout, (b.String()[2:])+"\n")
+	//io.WriteString(os.Stdout, (b.String()[2:])+"\n")
 }
