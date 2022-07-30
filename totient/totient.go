@@ -34,52 +34,6 @@ func New() *processor {
 	//return &processor{m: make(map[uint64]uint64), pg: primegen.New()}
 }
 
-func (p *processor) Totient(n uint64) (r uint64) {
-	// https://mathworld.wolfram.com/TotientFunction.html
-	// totient(1) = 1, also handle totient(0) at the same time as it can be 0 or 1
-	if n <= 1 {
-		return 1
-	}
-	/**/
-	// cache only when n is even as perfect totient check will result in n equal even (i.e. n >= 3, totient(n) is always even)
-	if n%2 == 0 {
-		r, ok := p.m[n]
-		if ok {
-			return r
-		}
-	}
-	/**/
-	/*
-		// calcuation using Euler's product formula, need factorization which adds lots of overhead if not probability based implementation
-				r = n
-				var seen uint64
-				for _, v := range p.Factor(n) {
-					if seen == v {
-						continue
-					}
-					seen = v
-					r /= v
-					r *= v - 1
-				}
-	*/
-	/**/
-	// calcuation using GCD
-	r = 1 // 1 is relatively prime to any number
-	for i := uint64(2); i < n; i++ {
-		if GCDEuclidean(i, n) == 1 {
-			r++
-		}
-	}
-	/**/
-	// only cache when n is even as it can be reused by another IsPerfect perform iteration of totient (i.e. n >= 3, totient(n) is always even)
-	/**/
-	if n%2 == 0 {
-		p.m[n] = r
-	}
-	/**/
-	return r
-}
-
 // IsPerfect() take an uint64  and check if it is a perfect totient and return bool
 func (p *processor) IsPerfect(n uint64) bool {
 	// a perfect totient is always an odd number start at 3
@@ -89,13 +43,27 @@ func (p *processor) IsPerfect(n uint64) bool {
 	// initial value of sum is totient(1)=1 which is where we stop the iteration
 	var sum uint64 = 1
 	// initial value for totient(n) for further iteration
-	var t uint64 = p.Totient(n)
-	for t > 1 {
+	var t, tmp uint64 = n, 0
+	for {
+		// lookup from cache to avoid repeating totient calculation
+		tmp = p.m[t]
+		if tmp == 0 {
+			//tmp = p.Totient(t)
+			tmp = Totient(t)
+			// only cache even totient which will be repeatedly calculated for different n (i.e. n >= 3, totient(n) is always even)
+			// https://mathworld.wolfram.com/TotientFunction.html
+			if t%2 == 0 {
+				p.m[t] = tmp
+			}
+		}
+		if tmp == 1 {
+			break
+		}
+		t = tmp
 		sum += t
 		if sum > n {
 			return false
 		}
-		t = p.Totient(t)
 	}
 	return sum == n
 }
@@ -108,7 +76,6 @@ func (p *processor) ListPerfect(start uint64, count uint64) (s []uint64) {
 		}()
 		pg := p.pg
 	*/
-	/**/
 	pg := primegen.New()
 	pc := newPerfectCandidate(start, pg)
 	// iterate, check and store the candidate that is a perfect totient
@@ -120,7 +87,6 @@ func (p *processor) ListPerfect(start uint64, count uint64) (s []uint64) {
 			count--
 		}
 	}
-	/**/
 	return s
 }
 
@@ -161,6 +127,25 @@ func (pc *perfectCandidate) next() uint64 {
 }
 
 /*
+func (p *processor) Totient(n uint64) (r uint64) {
+	// totient(1) = 1, also handle totient(0) at the same time as it can be 0 or 1
+	if n <= 1 {
+		return 1
+	}
+	// calcuation using Euler's product formula, need factorization which adds lots of overhead if not probability based implementation
+	r = n
+	var seen uint64
+	for _, v := range p.Factor(n) {
+		if seen == v {
+			continue
+		}
+		seen = v
+		r /= v
+		r *= v - 1
+	}
+	return r
+}
+
 func (p *processor) Factor(n uint64) (s []uint64) {
 	switch n {
 	case 0, 1:
@@ -194,7 +179,23 @@ func (p *processor) Factor(n uint64) (s []uint64) {
 	}
 	return s
 }
+
 */
+func Totient(n uint64) (r uint64) {
+	// totient(1) = 1, also handle totient(0) at the same time as it can be 0 or 1
+	if n <= 1 {
+		return 1
+	}
+	// calcuation using GCD
+	r = 1 // 1 is relatively prime to any number
+	for i := uint64(2); i < n; i++ {
+		if GCDEuclidean(i, n) == 1 {
+			r++
+		}
+	}
+	return r
+}
+
 func GCDEuclidean(a, b uint64) uint64 {
 	for a != b {
 		if a > b {
