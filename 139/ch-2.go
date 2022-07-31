@@ -56,7 +56,12 @@ func main() {
 			log.Fatal("failed on SetString()")
 		}
 		b.Sub(b, big.NewInt(1))
-		str := fmt.Sprintf("%0[1]*v", p-1, b.Div(b, big.NewInt(int64(p))).String())
+		//str := fmt.Sprintf("%0[1]*v", p-1, b.Div(b, big.NewInt(int64(p))).String())
+		bp, ok := new(big.Int).SetString(strconv.FormatUint(p, 10), 10)
+		if !ok {
+			log.Fatal("failed on SetString()")
+		}
+		str := fmt.Sprintf("%0[1]*v", p-1, b.Div(b, bp).String())
 		if isRepeating(str) {
 			continue
 		}
