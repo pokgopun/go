@@ -16,7 +16,6 @@ package main
 import (
 	"fmt"
 	"os"
-	"sort"
 	"strconv"
 	"strings"
 )
@@ -24,32 +23,32 @@ import (
 func main() {
 	count := 1
 	fmt.Sscanf(strings.Join(os.Args[1:], " "), "%d", &count)
+	// start with 10C3 as we need at least 6 (i.e. 3!) variations to satisfy 1x-6x, end with 10C9 as 10C10 only has single variation
 	for i := 3; i < 10; i++ {
 		var c string
 		for _, v := range strings.Split(combo(i, "0123456789", "", &c), " ") {
-			// filter out siries that cannot produce 1x and 6x => max/min < 6
-			/**/
+			// filter out combinations that cannot produce 1x and 6x => max/min < 6
 			min, _ := strconv.Atoi(v)
-			b := []byte(v)
-			sort.SliceStable(b, func(i, j int) bool {
-				return true
-			})
-			max, _ := strconv.Atoi(string(b))
+			var max int
+			n := min
+			for n > 0 {
+				max *= 10
+				max += n % 10
+				n /= 10
+			}
 			if max/min < 6 {
 				continue
 			}
-			/**/
-			//fmt.Println(v)
-			m := make(map[string]bool)
 			var p string
 			for _, a := range strings.Split(permute(v, "", &p), " ") {
-				m[a] = true
-			}
-			for a, _ := range m {
+				//for _, a := range permute(v, "", &p) {
+				//p := make(map[string]bool)
+				//for _, a := range permute(v, "", p) {
 				n, _ := strconv.Atoi(a)
 				var j int
 				for j = 6; j > 1; j-- {
-					if !m[strconv.Itoa(j*n)] {
+					if !strings.Contains(p, fmt.Sprintf("%0[1]*d", i, j*n)) {
+						//if !p[fmt.Sprintf("%0[1]*d", i, j*n)] {
 						break
 					}
 				}
@@ -74,6 +73,7 @@ func permute(s, t string, res *string) string {
 		}
 	} else {
 		*res += " " + t
+		return ""
 	}
 	return (*res)[1:]
 }
@@ -82,6 +82,7 @@ func combo(r int, e, c string, res *string) string {
 	lc, le := len(c), len(e)
 	if lc == r || lc+le == r {
 		*res += " " + (c + e)[:r]
+		return ""
 	} else {
 		for i := 0; i <= lc+le-r; i++ {
 			combo(r, e[i+1:], c+string(e[i]), res)
